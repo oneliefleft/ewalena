@@ -9,6 +9,7 @@ cmake_minimum_required (VERSION 2.8)
 # ewalena
 set (EWALENA_VERSION 0.3.0)
 set (EWALENA_BASE_NAME ewalena)
+set (EWALENA_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include)
 set (CMAKE_BUILD_TYPE Debug)
 
 include (CheckFunctionExists)
@@ -40,10 +41,12 @@ set (EWALENA_WITH_LIBRARIES ${EWALENA_WITH_LIBRARIES})
 
 # start project
 project (EWALENA)
-
 set (LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/lib)
 add_subdirectory (source)
 
+# start testing
+enable_testing () 
+add_subdirectory (tests)
 
 
 

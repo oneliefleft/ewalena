@@ -5,4 +5,5 @@ set (src
 
 foreach (test ${src})
    add_test (${test}, ${test})
+   add_executable (${test} ${test})
 endforeach ()

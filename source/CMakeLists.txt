@@ -1,11 +1,11 @@
 
-## Main trunk of gubbins includes
+## Main trunk of ewalena includes
 include_directories (
   ${CMAKE_SOURCE_DIR}/include
   ${CMAKE_BINARY_DIR}
   )
 
-## Subdirectoryies in the source tree
+## Subdirectories in the source tree
 add_subdirectory (base)
 
 ## Wrap objects into a single library
