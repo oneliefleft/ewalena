@@ -1,4 +1,4 @@
-## matrix
+## vector
 set (src
     00 01 02 
   )
@@ -10,4 +10,4 @@ foreach (test ${src})
    add_executable (${test} ${test})
    target_link_libraries (${test} ${EWALENA_BASE_NAME})
 endforeach ()
- 
+
