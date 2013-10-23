@@ -4,8 +4,8 @@
 // Author: Toby D. Young
 // -------------------------------------------------------------------
 
-#include <ewalena/lac/vector.h>
-#include <ewalena/lac/matrix.h>
+#include <ewalena/base/vector.h>
+#include <ewalena/base/matrix.h>
 
 // Initialization and reinitialization.
 unsigned int test ()
@@ -44,7 +44,7 @@ unsigned int test ()
 
 int main ()
 {
-  unsigned int error test ();
+  unsigned int error = test ();
   assert (error == 0);
 
   return 0;

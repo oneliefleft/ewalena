@@ -4,6 +4,8 @@ set (src
   )
 
 foreach (test ${src})
-   add_test (${test}, ${test})
-   add_executable (${test} ${test})
+   add_test ("vector/${test}" ${test})
+#  target_link_libraries (${test} "${CMAKE_SOURCE_DIR}/lib")
+#  target_link_libraries (${test} ${EWALENA_BASE_NAME}) 
 endforeach ()
+

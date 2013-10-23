@@ -4,8 +4,8 @@
 // Author: Toby D. Young
 // -------------------------------------------------------------------
 
-#include <ewalena/lac/vector.h>
-#include <ewalena/lac/matrix.h>
+#include <ewalena/base/vector.h>
+#include <ewalena/base/matrix.h>
 
 // Operators.
 unsigned int test ()
