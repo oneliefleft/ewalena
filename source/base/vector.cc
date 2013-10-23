@@ -114,10 +114,7 @@ namespace ewalena
   
 } // namespace ewalena
 
+#include "vector.inst"
 
-// -------------- Explicit Instantiations -------------------------------
 
-
-template class ewalena::Vector<double>;
-template class ewalena::Vector<std::complex<double>>;
 

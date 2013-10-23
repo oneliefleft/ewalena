@@ -40,7 +40,7 @@ namespace ewalena
   template <int dim, int rank, typename ValueType>
   Tensor<dim, rank, ValueType>::Tensor (const bool zero)
     :
-    __n_components (static_cast<unsigned int> (Math::pow (dim, rank))),
+    __n_components (static_cast<unsigned int> (math::pow (dim, rank))),
     data (new ValueType[__n_components])
   {
     if (zero)

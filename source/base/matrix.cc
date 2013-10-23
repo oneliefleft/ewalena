@@ -117,12 +117,7 @@ namespace ewalena
 
 } // namepsace ewalena
 
-
-// -------------- Explicit Instantiations -------------------------------
-
-
-template class ewalena::Matrix<double>;
-template class ewalena::Matrix<std::complex<double>>;
+#include "matrix.inst"
 
 
 

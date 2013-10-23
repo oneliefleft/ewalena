@@ -41,7 +41,7 @@
 #ifndef __ewalena_tensor_h
 #define __ewalena_tensor_h
 
-#include <ewalena/base/utilities.h>
+#include <ewalena/base/math.h>
 
 namespace ewalena
 {
@@ -289,7 +289,7 @@ namespace ewalena
 	{
 	  /* Read index from list and convert base_dim to base_10. */
 	  unsigned int base_dim  = va_arg (index_list, unsigned int);
-	  decimal               += static_cast<unsigned int> (Math::pow (dim, i) * base_dim);
+	  decimal               += static_cast<unsigned int> (math::pow (dim, i) * base_dim);
 	  
 	  assert (base_dim < dim);
 	}
@@ -320,7 +320,7 @@ namespace ewalena
       for (unsigned int i=1; i<rank; ++i) 
 	{
 	  unsigned int base_dim  = va_arg (index_list, unsigned int);
-	  decimal               += static_cast<unsigned int> (Math::pow (dim, i) * base_dim);
+	  decimal               += static_cast<unsigned int> (math::pow (dim, i) * base_dim);
 	  
 	  assert (base_dim < dim);
 	}

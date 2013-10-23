@@ -49,7 +49,7 @@ unsigned int test ()
 
 int main ()
 {
-  unsigned int error test ();
+  unsigned int error = test ();
   assert (error == 0);
 
   return 0;

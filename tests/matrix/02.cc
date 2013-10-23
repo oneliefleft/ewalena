@@ -34,7 +34,7 @@ int main ()
 {
   try
     {
-      unsigned int error test ();
+      unsigned int error = test ();
       assert (error == 0);
     }
 

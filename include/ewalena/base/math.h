@@ -44,13 +44,9 @@ namespace ewalena
 {
   
   /**
-   * @brief Math utilities.
-   *
    * Some math utilities and functions.
-   *
-   * @author Toby D. Young 2012.
    */
-  namespace Math
+  namespace math
   {
 
     /**
@@ -90,15 +86,6 @@ namespace ewalena
      */
     bool is_even (const int scalar);    
     
-  } /* namespace Math */
-  
-  /**
-   * C-style list of value types.
-   *
-   * @author Toby D. Young 2011.
-   */
-  namespace Value
-  {
     /**
      * \f$pi\f$
      */
@@ -123,8 +110,9 @@ namespace ewalena
 
 
   /*-------------- Inline and Other Functions -----------------------*/
+
   inline 
-    unsigned int Math::pow (const unsigned int x, 
+    unsigned int math::pow (const unsigned int x, 
 			    const unsigned int y)
   {
     return (y == 0) 
@@ -133,7 +121,7 @@ namespace ewalena
   }
   
   inline
-    unsigned int Math::factorial (const unsigned int x)
+    unsigned int math::factorial (const unsigned int x)
   {
     return (x == 1 || x == 0) 
       ? 1 
