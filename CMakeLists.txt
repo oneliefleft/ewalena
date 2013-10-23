@@ -10,7 +10,7 @@ cmake_minimum_required (VERSION 2.8)
 set (EWALENA_VERSION 0.3.0)
 set (EWALENA_BASE_NAME ewalena)
 set (EWALENA_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/include")
-set (EWALENA_LIBRARIES_DIR "${CMAKE_SOURCE_DIR}/lib")
+set (EWALENA_LIBRARY_DIR "${CMAKE_SOURCE_DIR}/lib")
 set (CMAKE_BUILD_TYPE Debug)
 
 include (CheckFunctionExists)
@@ -44,8 +44,6 @@ add_subdirectory (source)
 
 # start testing
 enable_testing () 
-#set (CMAKE_CTEST_COMMAND ctest -V)
-#add_custom_target (check COMMAND ${CMAKE_CTEST_COMMAND})
 target_link_libraries (ewalena)
 add_subdirectory (tests)
 
