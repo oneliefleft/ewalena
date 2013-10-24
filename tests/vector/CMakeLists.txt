@@ -6,8 +6,9 @@ set (src
 link_directories (${EWALENA_LIBRARY_DIR})
 
 foreach (test ${src})
-   add_test (${test} ${test})
-   add_executable (${test} ${test})
-   target_link_libraries (${test} ${EWALENA_BASE_NAME})
+  set (testname "vector-${test}")
+  add_test (${test} ${testname})
+  add_executable (${testname} ${test})
+  target_link_libraries (${testname} ${EWALENA_BASE_NAME})
 endforeach ()
 

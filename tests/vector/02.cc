@@ -28,7 +28,7 @@ unsigned int test ()
   
   // -= and clear () operators
   vector_copy -= vector;
-  vector.clear ();
+  vector.reinit ();
   assert (vector_copy == vector);
 
   return 0;
@@ -36,7 +36,7 @@ unsigned int test ()
 
 int main ()
 {
-  unsigned int error test ();
+  unsigned int error = test ();
   assert (error == 0);
 
   return 0;
