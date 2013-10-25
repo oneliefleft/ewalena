@@ -89,7 +89,7 @@ namespace ewalena
      * @note A typical usage of this could be:
      * <code>ewalena::Vector<double> V = {1.0, 1.1, 1.25}</code>.
      */
-    Vector (std::initializer_list<ValueType> list);
+    Vector (const std::initializer_list<ValueType> list);
     
     /**
      * Reinitialise the contents of this vector to nothing (zero).

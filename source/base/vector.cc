@@ -64,7 +64,7 @@ namespace ewalena
   }
 
   template <typename ValueType>
-  Vector<ValueType>::Vector (std::initializer_list<ValueType> list) 
+  Vector<ValueType>::Vector (const std::initializer_list<ValueType> list) 
     :
     n_el (list.size ()),
     data (new ValueType[n_el])
