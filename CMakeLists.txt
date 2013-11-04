@@ -13,6 +13,8 @@ set (EWALENA_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/include")
 set (EWALENA_LIBRARY_DIR "${CMAKE_SOURCE_DIR}/lib")
 set (CMAKE_BUILD_TYPE Debug)
 
+message ("-- Setting up namespace ewalena (${EWALENA_BASE_NAME} ${EWALENA_VERSION})")
+
 include (CheckFunctionExists)
 include (CheckSymbolExists)
 include (CheckCXXCompilerFlag)
