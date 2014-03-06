@@ -1,0 +1,4 @@
+// Explicit Instantiations
+template class ewalena::MatrixBase<double>;
+template class ewalena::MatrixBase<long double>;
+

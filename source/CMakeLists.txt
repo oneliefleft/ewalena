@@ -7,10 +7,12 @@ include_directories (
 
 ## Subdirectories in the source tree
 add_subdirectory (base)
+add_subdirectory (lac)
 
 ## Wrap objects into a single library
 add_library (${EWALENA_BASE_NAME} SHARED ## NB: this "SHARED" should not really be here!
   $<TARGET_OBJECTS:base>
+  $<TARGET_OBJECTS:lac>
 )
 
 ## Set library properties
