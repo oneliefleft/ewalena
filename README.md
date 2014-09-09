@@ -1,4 +1,4 @@
 ewalena
 =======
 
-A state-space quantum many-body problem library
+A real-space / state-space quantum many-body problem library
